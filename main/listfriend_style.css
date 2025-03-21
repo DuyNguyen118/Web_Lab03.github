@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.918);
+}
+
+header {
+    background-color: #233142;
+    width: 100%;
+    padding: 1em 0;
+    font-size: x-large;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #1f2a38;
+}
+
+.friends-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 80px; 
+}
+
+.friend {
+    text-align: center;
+    color: white;
+}
+
+.friend img {
+    width: 300px; 
+    height: 400px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.friend img:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3); 
+}
+
+.friend h3 {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.friend p {
+    font-size: 18px;
+    opacity: 0.8;
+}

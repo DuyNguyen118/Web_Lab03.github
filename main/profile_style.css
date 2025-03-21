@@ -1,0 +1,142 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.918);
+}
+
+header {
+    background-color: #233142;
+    width: 100%;
+    padding: 1em 0;
+    font-size: x-large;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #1f2a38;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.content-box {
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 0px;
+}
+
+.text-container p{
+    font-size: 1rem;;
+}
+
+img {
+    clip-path: circle(50%);
+    width: 300px; /* Adjust image size */
+    height: 300px;
+    object-fit: cover;
+}
+.profile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tag {
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: -10px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.831); /* Darker background */
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.icon {
+    display: flex;
+}
+.icon i {
+    font-size: 2rem;
+    gap: 20px;
+    padding: 20px;
+    transition: color 0.3s, transform 0.2s;
+}
+.icon i:hover {
+    color: lightblue;
+    transform: scale(1.2); /* Slight zoom effect */
+}
+
+.icon a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Default icon color */
+    font-size: 2rem; /* Adjust icon size */
+    transition: color 0.3s, transform 0.2s;
+}
+
+.icon a:hover {
+    color: lightblue; /* Color when hovering */
+    transform: scale(1.2);
+}
+
+/* Ensure visited links do not turn purple */
+.icon a:visited {
+    color: white;
+}
+
+footer{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
